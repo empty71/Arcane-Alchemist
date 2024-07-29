@@ -19,15 +19,15 @@ public class CraftingManager : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0))
         {
-            if(CurrentItem != null)
+            if (CurrentItem != null)
             {
-              customCursor.gameObject.SetActive(false);
+                customCursor.gameObject.SetActive(false);
                 Slot nearestSlot = null;
                 float shortestDistance = float.MaxValue;
 
                 foreach (Slot slot in craftingSlots)
                 {
-                   float dist = Vector2.Distance(Input.mousePosition, slot.transform.position);
+                    float dist = Vector2.Distance(Input.mousePosition, slot.transform.position);
 
                     if (dist < shortestDistance)
                     {
@@ -43,7 +43,7 @@ public class CraftingManager : MonoBehaviour
                 CurrentItem = null;
 
                 CheckForCreatedRecipes();
-                
+
             }
         }
     }
