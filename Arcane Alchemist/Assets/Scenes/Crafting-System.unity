@@ -164,8 +164,8 @@ MonoBehaviour:
   - {fileID: 0}
   recipes:
   - woodwoodwoodwood
-  - woodwoodwoodstone
-  - ironironironiron
+  - woodnullironiron
+  - ironironwoodwood
   - slimeironironslime
   recipeResults:
   - {fileID: 2885487021521409078, guid: a5e5c7b267708f848951f2ac049358f0, type: 3}
@@ -1927,6 +1927,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1653413494}
     m_Modifications:
+    - target: {fileID: 25580684487108414, guid: 5652f5d62349cd34c9bc9caaa23941a2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98d8e738c9f35664b9ffd68c28beea7d,
+        type: 3}
     - target: {fileID: 2057227038946797423, guid: 5652f5d62349cd34c9bc9caaa23941a2,
         type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2060,6 +2066,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood
       objectReference: {fileID: 0}
+    - target: {fileID: 6134285676008980252, guid: 2436e2b0930bcfe41a972222cc5c01d4,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: af842bba9b9d55e45825de64d0c28fe0,
+        type: 3}
     - target: {fileID: 7690197452421761266, guid: 2436e2b0930bcfe41a972222cc5c01d4,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2278,6 +2290,12 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 30426857}
+    - target: {fileID: 4691089907976533807, guid: 217c75fd86f3b1b468e2887c985699f5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e83960898de61124681c718e62fd3e69,
+        type: 3}
     - target: {fileID: 7443924441563072153, guid: 217c75fd86f3b1b468e2887c985699f5,
         type: 3}
       propertyPath: m_Name
@@ -2306,6 +2324,12 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 30426857}
+    - target: {fileID: 4328041972787924329, guid: b42233d2b15c03f48a3f3e71acbb6649,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 735473df0d9fc1c44b2b1131815a76b0,
+        type: 3}
     - target: {fileID: 7178703722146031024, guid: b42233d2b15c03f48a3f3e71acbb6649,
         type: 3}
       propertyPath: m_Pivot.x
