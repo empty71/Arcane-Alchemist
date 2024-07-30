@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6014f0e0996189a4eaa805a265cb5800, type: 3}
-  m_Name: wood
+  m_Script: {fileID: 11500000, guid: 671b0be9fd00940458edb742a77e3be7, type: 3}
+  m_Name: iron bar
   m_EditorClassIdentifier: 
-  name: wood
-  icon: {fileID: 21300000, guid: a92701527ed80484fac85b4d47ba345e, type: 3}
+  name: iron bar
+  icon: {fileID: 21300000, guid: 8412756d2d30fc2499558bea8f14d2a6, type: 3}
+  itemType: 2
+  amount: 1

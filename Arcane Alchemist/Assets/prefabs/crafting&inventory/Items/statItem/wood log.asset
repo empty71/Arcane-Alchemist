@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 671b0be9fd00940458edb742a77e3be7, type: 3}
-  m_Name: stone axe
+  m_Name: wood log
   m_EditorClassIdentifier: 
-  name: stone axe
-  icon: {fileID: 21300000, guid: abb161e1c18c0bf4ebe3ad04dfcc42df, type: 3}
-  itemType: 3
+  name: wood log
+  icon: {fileID: 21300000, guid: a92701527ed80484fac85b4d47ba345e, type: 3}
+  itemType: 2
   amount: 1

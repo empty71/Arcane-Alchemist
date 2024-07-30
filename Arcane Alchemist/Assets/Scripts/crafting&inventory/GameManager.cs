@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     #endregion
     public List<Item> itemList = new List<Item>();
+    public List<Item> craftingRecipes = new List<Item>();
 
     private void Update()
     {

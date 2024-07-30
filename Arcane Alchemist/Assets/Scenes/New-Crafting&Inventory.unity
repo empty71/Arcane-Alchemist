@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 243305774}
   - component: {fileID: 243305773}
   m_Layer: 5
-  m_Name: Content
+  m_Name: Content inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -820,15 +820,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemList:
-  - {fileID: 11400000, guid: 4f87682941ab9414596c87be2f94b546, type: 2}
-  - {fileID: 11400000, guid: d8ae3f456c368f849b5891b771a9d547, type: 2}
-  - {fileID: 11400000, guid: acd43aef70c1ebb429feb800531bbf0a, type: 2}
-  - {fileID: 11400000, guid: b798cbe62cb6cb8468d9d10b2bd30ea8, type: 2}
-  - {fileID: 11400000, guid: 8a084c0118d5fc54abfe0ecc6942e60a, type: 2}
-  - {fileID: 11400000, guid: e4bebeb5051eb2940b974dd3ada63f58, type: 2}
   - {fileID: 11400000, guid: 25a57cbde6a744647a25a39722158a34, type: 2}
-  - {fileID: 11400000, guid: 674ed507612d86941bea03ffb3a1d6f7, type: 2}
-  - {fileID: 11400000, guid: 5ec6917746df8434695f302aab47e016, type: 2}
+  - {fileID: 11400000, guid: c4f559c59a87d984e8483db96f75f796, type: 2}
+  - {fileID: 11400000, guid: 91cf0055fefc4984dbddd41ddb5dafac, type: 2}
+  - {fileID: 11400000, guid: 8a084c0118d5fc54abfe0ecc6942e60a, type: 2}
+  - {fileID: 11400000, guid: 8e2f77682c0d5744c8265f8b384a8919, type: 2}
+  - {fileID: 11400000, guid: e91c0663fc786c241a12f702339c1ec9, type: 2}
+  craftingRecipes:
+  - {fileID: 11400000, guid: 5c02c97ca72616c458f1fb1bb1779d35, type: 2}
+  - {fileID: 11400000, guid: 198a684df5e08064f883a4cf102d1501, type: 2}
+  - {fileID: 11400000, guid: e45eab0d8469002409c069f6c7370b06, type: 2}
+  - {fileID: 11400000, guid: 79b40d926a790ad42a4608bd668eeebc, type: 2}
 --- !u!4 &537360152
 Transform:
   m_ObjectHideFlags: 0
@@ -859,7 +861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &629226338
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1429,7 +1431,7 @@ GameObject:
   - component: {fileID: 861647401}
   - component: {fileID: 861647400}
   m_Layer: 5
-  m_Name: Content
+  m_Name: Content craft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2863,6 +2865,7 @@ MonoBehaviour:
   itemSlotPrefab: {fileID: 2699776489044650447, guid: c53e4912f20682940b2beacffa4ea5a5,
     type: 3}
   inventoryItemTransform: {fileID: 243305772}
+  craftingItemTransform: {fileID: 861647399}
 --- !u!1 &1982586267
 GameObject:
   m_ObjectHideFlags: 0

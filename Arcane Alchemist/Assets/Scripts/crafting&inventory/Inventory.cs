@@ -31,4 +31,32 @@ public class Inventory : MonoBehaviour
         inventoryItemList.Remove(item);
         onItemChange.Invoke();
     }
+    public bool ContainsItem(Item item,int amount)
+    {
+        int itemcounter = 0;
+        foreach (Item i in inventoryItemList)
+        {
+            if(i == item)
+            {
+                itemcounter++;
+            }
+        }
+        if(itemcounter>= amount)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void RemoveItems(Item item, int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            RemoveItem(item);
+        }
+    }
+
 }
