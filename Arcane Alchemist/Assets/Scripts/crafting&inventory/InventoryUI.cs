@@ -98,24 +98,26 @@ public class InventoryUi : MonoBehaviour
     {
         inventoryOpen = true;
         inventoryParent.SetActive(true);
+        inventoryTab.SetActive(true);
     }
 
     private void CloseInventory()
     {
         inventoryOpen = false;
         inventoryParent.SetActive(false);
-    }
-
-    public void OnCraftingTabClicked()
-    {
-        craftingTab.SetActive(true);
         inventoryTab.SetActive(false);
     }
 
-    public void OnInventoryTabClicked()
-    {
-        craftingTab.SetActive(false);
-        inventoryTab.SetActive(true);
-    }
+    //public void OnCraftingTabClicked()
+    //{
+    //    craftingTab.SetActive(true);
+    //   
+    //}
+
+    //public void OnInventoryTabClicked()
+    //{
+    //    craftingTab.SetActive(false);
+    //   
+    //}
 
 }
