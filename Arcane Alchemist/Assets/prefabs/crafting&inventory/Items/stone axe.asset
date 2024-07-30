@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: stone axe
   m_EditorClassIdentifier: 
   name: stone axe
-  icon: {fileID: 21300000, guid: abb161e1c18c0bf4ebe3ad04dfcc42df, type: 3}
+  icon: {fileID: 21300000, guid: 4c15af26f6f95274ebcdcbf8f4e11b83, type: 3}
+  itemDescription: used for battle and harvesting

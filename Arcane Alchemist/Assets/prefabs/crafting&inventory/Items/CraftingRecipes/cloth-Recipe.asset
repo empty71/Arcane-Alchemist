@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: cloth
   icon: {fileID: 21300000, guid: b98f843eb7b51374ab1b22b39adf45aa, type: 3}
-  result: {fileID: 0}
+  itemDescription: Used for crafting
+  result: {fileID: 11400000, guid: 339af77cab6ce044f94c5a229cccd033, type: 2}
   ingredients:
   - item: {fileID: 11400000, guid: 15422f3da276f8c4ea62076d9724e03a, type: 2}
     amount: 1
   - item: {fileID: 11400000, guid: 5ec6917746df8434695f302aab47e016, type: 2}
-    amount: 5
+    amount: 2

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: iron bar
   m_EditorClassIdentifier: 
   name: iron bar
-  icon: {fileID: 21300000, guid: 8412756d2d30fc2499558bea8f14d2a6, type: 3}
+  icon: {fileID: 21300000, guid: 822578fcc6ee2e742978987d0bd2295c, type: 3}
+  itemDescription: Used for crafting
   itemType: 2
   amount: 1

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: wood log
   m_EditorClassIdentifier: 
   name: wood log
-  icon: {fileID: 21300000, guid: a92701527ed80484fac85b4d47ba345e, type: 3}
+  icon: {fileID: 21300000, guid: af842bba9b9d55e45825de64d0c28fe0, type: 3}
+  itemDescription: Used for crafting
   itemType: 2
   amount: 1

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Tread-Recipe
   m_EditorClassIdentifier: 
   name: Tread
-  icon: {fileID: 21300000, guid: 00ab41014bb28864eba327a0706646d3, type: 3}
+  icon: {fileID: 21300000, guid: d51f23b8467b11044a54682ee6a25013, type: 3}
+  itemDescription: Used for crafting
   result: {fileID: 11400000, guid: 5ec6917746df8434695f302aab47e016, type: 2}
   ingredients:
   - item: {fileID: 11400000, guid: 91cf0055fefc4984dbddd41ddb5dafac, type: 2}

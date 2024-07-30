@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: monster bones
   m_EditorClassIdentifier: 
   name: monster bones
-  icon: {fileID: 21300000, guid: 0a4aea93699bdd54d94a9407a2a8cece, type: 3}
+  icon: {fileID: 21300000, guid: bb9605da3d8205b449d71a8a58b8590c, type: 3}
+  itemDescription: Used for crafting
   itemType: 1
   amount: 3

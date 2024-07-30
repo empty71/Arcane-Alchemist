@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: berries
   m_EditorClassIdentifier: 
   name: berry
-  icon: {fileID: 21300000, guid: 5923b82a859cf0e4987b4be8c3b434bf, type: 3}
+  icon: {fileID: 21300000, guid: 7091aeaaa85d913458a46527b650ed95, type: 3}
+  itemDescription: Used for crafting
   itemType: 0
   amount: 10

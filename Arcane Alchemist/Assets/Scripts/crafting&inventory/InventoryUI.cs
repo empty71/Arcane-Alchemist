@@ -2,36 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryUI : MonoBehaviour
+public class InventoryUi : MonoBehaviour
 {
     private bool inventoryOpen = false;
     public bool InventoryOpen => inventoryOpen;
-
     public GameObject inventoryParent;
     public GameObject inventoryTab;
     public GameObject craftingTab;
 
     private List<ItemSlot> itemSlotList = new List<ItemSlot>();
-    public GameObject itemSlotPrefab;
-    public Transform inventoryItemTransform;
 
-    public Transform craftingItemTransform;
+    public GameObject inventorySlotPrefab;
+    public GameObject craftingSlotPrefab;
+
+    public Transform invetoryItemTransform;
+    public Transform craftingItemTranform;
+
+
     private void Start()
     {
         Inventory.instance.onItemChange += UpdateInventoryUI;
         UpdateInventoryUI();
         SetUpCraftingRecipes();
     }
+
+    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
             if (inventoryOpen)
             {
+                //close inventory
                 CloseInventory();
             }
             else
             {
+                //openInventory
                 OpenInventory();
             }
         }
@@ -39,11 +46,11 @@ public class InventoryUI : MonoBehaviour
 
     private void SetUpCraftingRecipes()
     {
-        List<Item> crafingRecipes = GameManager.instance.craftingRecipes;
+        List<Item> craftingRecipes = GameManager.instance.craftingRecipes;
 
-        foreach (Item recipe in crafingRecipes)
+        foreach (Item recipe in craftingRecipes)
         {
-            GameObject Go = Instantiate(itemSlotPrefab, craftingItemTransform);
+            GameObject Go = Instantiate(craftingSlotPrefab, craftingItemTranform);
             ItemSlot slot = Go.GetComponent<ItemSlot>();
             slot.AddItem(recipe);
         }
@@ -53,15 +60,17 @@ public class InventoryUI : MonoBehaviour
     {
         int currentItemCount = Inventory.instance.inventoryItemList.Count;
 
-        if(currentItemCount > itemSlotList.Count)
+        if (currentItemCount > itemSlotList.Count)
         {
+            //Add more item slots
             AddItemSlots(currentItemCount);
         }
 
-        for (int i = 0; i < itemSlotList.Count; i++)
+        for (int i = 0; i < itemSlotList.Count; ++i)
         {
-            if(i < currentItemCount)
+            if (i < currentItemCount)
             {
+                //update the current item in the slot
                 itemSlotList[i].AddItem(Inventory.instance.inventoryItemList[i]);
             }
             else
@@ -76,24 +85,23 @@ public class InventoryUI : MonoBehaviour
     {
         int amount = currentItemCount - itemSlotList.Count;
 
-        for(int i = 0; i<amount; i++)
+        for (int i = 0; i < amount; ++i)
         {
-            GameObject GO = Instantiate(itemSlotPrefab, inventoryItemTransform);
+            GameObject GO = Instantiate(inventorySlotPrefab, invetoryItemTransform);
             ItemSlot newSlot = GO.GetComponent<ItemSlot>();
             itemSlotList.Add(newSlot);
         }
     }
- 
+
 
     private void OpenInventory()
     {
-        Cursor.visible = true;
         inventoryOpen = true;
         inventoryParent.SetActive(true);
     }
+
     private void CloseInventory()
     {
-        Cursor.visible = false;
         inventoryOpen = false;
         inventoryParent.SetActive(false);
     }
@@ -109,6 +117,5 @@ public class InventoryUI : MonoBehaviour
         craftingTab.SetActive(false);
         inventoryTab.SetActive(true);
     }
-
 
 }

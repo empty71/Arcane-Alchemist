@@ -16,7 +16,7 @@ public class ItemSlot : MonoBehaviour
 
     public void UseItem()
     {
-        if(item != null)
+        if (item != null)
         {
             item.Use();
         }
@@ -25,5 +25,25 @@ public class ItemSlot : MonoBehaviour
     public void DestroySlot()
     {
         Destroy(gameObject);
+    }
+
+    public void OnRemoveButtonClicked()
+    {
+        if (item != null)
+        {
+            Inventory.instance.RemoveItem(item);
+        }
+    }
+
+
+    public void OnCursorEnter()
+    {
+        //display item info
+        GameManager.instance.DisplayItemInfo(item.name, item.GetItemDescription(), transform.position);
+    }
+
+    public void OnCursorExit()
+    {
+        GameManager.instance.DestroyItemInfo();
     }
 }

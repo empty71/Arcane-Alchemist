@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: stone
   m_EditorClassIdentifier: 
   name: stone
-  icon: {fileID: 21300000, guid: ca6a70978fc0d4242928f05a6cc74d2c, type: 3}
+  icon: {fileID: 21300000, guid: 8efbde22588a2954ca73c3b0cb9a22ad, type: 3}
+  itemDescription: Used for crafting
   itemType: 2
   amount: 1

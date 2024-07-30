@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    #region singleton
-    public static Inventory instance;
 
+    #region singleton
+
+    public static Inventory instance;
     private void Awake()
     {
         if (instance == null)
@@ -14,10 +15,11 @@ public class Inventory : MonoBehaviour
             instance = this;
         }
     }
+
     #endregion
 
     public delegate void OnItemChange();
-    public OnItemChange onItemChange = delegate {};
+    public OnItemChange onItemChange = delegate { };
 
     public List<Item> inventoryItemList = new List<Item>();
 
@@ -26,22 +28,26 @@ public class Inventory : MonoBehaviour
         inventoryItemList.Add(item);
         onItemChange.Invoke();
     }
+
     public void RemoveItem(Item item)
     {
         inventoryItemList.Remove(item);
         onItemChange.Invoke();
     }
-    public bool ContainsItem(Item item,int amount)
+
+    public bool ContainsItem(Item item, int amount)
     {
-        int itemcounter = 0;
+        int itemCounter = 0;
+
         foreach (Item i in inventoryItemList)
         {
-            if(i == item)
+            if (i == item)
             {
-                itemcounter++;
+                itemCounter++;
             }
         }
-        if(itemcounter>= amount)
+
+        if (itemCounter >= amount)
         {
             return true;
         }
@@ -53,7 +59,7 @@ public class Inventory : MonoBehaviour
 
     public void RemoveItems(Item item, int amount)
     {
-        for (int i = 0; i < amount; i++)
+        for (int i = 0; i < amount; ++i)
         {
             RemoveItem(item);
         }
