@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class CraftingManager : MonoBehaviour
 {
-    private Item CurrentItem;
+    private Item_oldCrafting CurrentItem;
     public Image customCursor;
 
-    public Slot[] craftingSlots;
+    public Slot_oldCrafting[] craftingSlots;
 
-    public List<Item> itemList;
+    public List<Item_oldCrafting> itemList;
     public string[] recipes;
-    public Item[] recipeResults;
-    public Slot resultSlot;
+    public Item_oldCrafting[] recipeResults;
+    public Slot_oldCrafting resultSlot;
 
     private void Update()
     {
@@ -22,10 +22,10 @@ public class CraftingManager : MonoBehaviour
             if (CurrentItem != null)
             {
                 customCursor.gameObject.SetActive(false);
-                Slot nearestSlot = null;
+                Slot_oldCrafting nearestSlot = null;
                 float shortestDistance = float.MaxValue;
 
-                foreach (Slot slot in craftingSlots)
+                foreach (Slot_oldCrafting slot in craftingSlots)
                 {
                     float dist = Vector2.Distance(Input.mousePosition, slot.transform.position);
 
@@ -54,7 +54,7 @@ public class CraftingManager : MonoBehaviour
         resultSlot.item = null;
 
         string currentRecipeString = "";
-        foreach(Item item in itemList)
+        foreach (Item_oldCrafting item in itemList)
         {
             if(item != null)
             {
@@ -76,14 +76,14 @@ public class CraftingManager : MonoBehaviour
         }
     }
 
-    public void onClickSlot(Slot slot)
+    public void onClickSlot(Slot_oldCrafting slot)
     {
         slot.item = null;
         itemList[slot.index] = null;
         slot.gameObject.SetActive(false);
         CheckForCreatedRecipes();
     }
-    public void OnmouseDownItem(Item item)
+    public void OnmouseDownItem(Item_oldCrafting item)
     {
         if(CurrentItem == null)
         {

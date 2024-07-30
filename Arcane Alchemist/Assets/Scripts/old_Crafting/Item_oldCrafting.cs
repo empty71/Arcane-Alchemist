@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slot : MonoBehaviour
+public class Item_oldCrafting : MonoBehaviour
 {
-    public Item item;
-    public int index;
+    public string itemName;
 }
