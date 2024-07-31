@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671b0be9fd00940458edb742a77e3be7, type: 3}
   m_Name: leaves
   m_EditorClassIdentifier: 
-  name: leaves
+  name: Sting
   icon: {fileID: 21300000, guid: ff8e4e680b2c7e34f8fb167d7b2f2311, type: 3}
   itemDescription: Used for crafting
   itemType: 4
