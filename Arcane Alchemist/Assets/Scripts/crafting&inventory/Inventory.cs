@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-
     #region singleton
 
     public static Inventory instance;
@@ -13,6 +12,10 @@ public class Inventory : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+        }
+        else
+        {
+            Destroy(gameObject); // Ensure only one instance
         }
     }
 
@@ -26,12 +29,14 @@ public class Inventory : MonoBehaviour
     public void AddItem(Item item)
     {
         inventoryItemList.Add(item);
+        Debug.Log("Added item: " + item.name + " to inventory.");
         onItemChange.Invoke();
     }
 
     public void RemoveItem(Item item)
     {
         inventoryItemList.Remove(item);
+        Debug.Log("Removed item: " + item.name + " from inventory.");
         onItemChange.Invoke();
     }
 
@@ -47,14 +52,7 @@ public class Inventory : MonoBehaviour
             }
         }
 
-        if (itemCounter >= amount)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return itemCounter >= amount;
     }
 
     public void RemoveItems(Item item, int amount)
@@ -64,5 +62,4 @@ public class Inventory : MonoBehaviour
             RemoveItem(item);
         }
     }
-
 }
