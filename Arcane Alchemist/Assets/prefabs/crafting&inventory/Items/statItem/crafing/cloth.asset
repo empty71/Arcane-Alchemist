@@ -15,7 +15,8 @@ MonoBehaviour:
   name: cloth
   icon: {fileID: 21300000, guid: b98f843eb7b51374ab1b22b39adf45aa, type: 3}
   itemDescription: Used for crafting
-  itemType: 4
-  statItemPrefab: {fileID: 0}
+  itemType: 2
+  statItemPrefab: {fileID: 4651264813699394226, guid: 238d5f1b77b9e494180383a7f0480c61,
+    type: 3}
   amount: 1
   ID: 8

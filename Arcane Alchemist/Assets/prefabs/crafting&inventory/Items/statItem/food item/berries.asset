@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: berry
   icon: {fileID: 21300000, guid: 7091aeaaa85d913458a46527b650ed95, type: 3}
-  itemDescription: Used for crafting
+  itemDescription: Used for healing
   itemType: 0
   statItemPrefab: {fileID: 191050, guid: b5b903da71f948758cc8f65f59d30edc, type: 3}
   amount: 10

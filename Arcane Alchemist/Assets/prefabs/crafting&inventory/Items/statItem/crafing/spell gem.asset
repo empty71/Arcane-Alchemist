@@ -15,7 +15,7 @@ MonoBehaviour:
   name: Defulat Item
   icon: {fileID: 0}
   itemDescription: Used for crafting
-  itemType: 0
-  statItemPrefab: {fileID: 0}
-  amount: 0
-  ID: 0
+  itemType: 2
+  statItemPrefab: {fileID: 100002, guid: 3be38d352077ca841a43c112b45de6f3, type: 3}
+  amount: 1
+  ID: 13

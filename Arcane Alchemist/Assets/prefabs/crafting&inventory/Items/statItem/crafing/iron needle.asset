@@ -15,7 +15,8 @@ MonoBehaviour:
   name: iron needle
   icon: {fileID: 21300000, guid: 6bec69d6f6c3d3544a360e6edffbe481, type: 3}
   itemDescription: Used for crafting
-  itemType: 4
-  statItemPrefab: {fileID: 0}
+  itemType: 2
+  statItemPrefab: {fileID: 5409340933053809108, guid: 90785c74b47617741aa5d3792af17448,
+    type: 3}
   amount: 1
   ID: 9
