@@ -14,7 +14,10 @@ public class PickUp : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        
         inventory.inventoryItemList.Add(item);
         Debug.Log("item picked up");
+        Destroy(gameObject);
     }
 }
