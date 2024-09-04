@@ -11,7 +11,7 @@ public class CraftingStation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "player1")
         {
             playerHasEntered = true;
         }
@@ -19,7 +19,7 @@ public class CraftingStation : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "player1")
         {
             playerHasEntered = true;
         }
@@ -39,7 +39,7 @@ public class CraftingStation : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "player1")
         {
             playerHasEntered = false;
             inventoryUi.inventoryParent.SetActive(false);

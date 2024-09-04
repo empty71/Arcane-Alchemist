@@ -16,6 +16,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 4c15af26f6f95274ebcdcbf8f4e11b83, type: 3}
   itemDescription: used for battle and harvesting
   itemType: 3
-  statItemPrefab: {fileID: 132240, guid: 28bbda36f51a405f8e8a661d2246404a, type: 3}
+  statItemPrefab: {fileID: 1412202115716374117, guid: 0e960670a1eb55b44b56f715951db803,
+    type: 3}
   amount: 1
   ID: 10
