@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671b0be9fd00940458edb742a77e3be7, type: 3}
   m_Name: spell gem
   m_EditorClassIdentifier: 
-  name: Defulat Item
+  name: spell gem
   icon: {fileID: 0}
-  itemDescription: Used for crafting
+  itemDescription: used for crafting wands
   itemType: 2
   statItemPrefab: {fileID: 100002, guid: 3be38d352077ca841a43c112b45de6f3, type: 3}
   amount: 1
