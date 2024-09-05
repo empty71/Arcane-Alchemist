@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
 
     public void DisplayItemInfo(string itemName, string itemDescription, Vector2 buttonPos)
     {
+
         if (currentItemInfo != null)
         {
             Destroy(currentItemInfo.gameObject);

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7776866787012025208}
   - component: {fileID: 6970884875541761353}
   - component: {fileID: 7239138997631084605}
+  - component: {fileID: 7166091819427487413}
   m_Layer: 0
   m_Name: Metal_Bar_pickup
   m_TagString: Untagged
@@ -162,3 +163,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statItem: {fileID: 11400000, guid: c4f559c59a87d984e8483db96f75f796, type: 2}
+--- !u!114 &7166091819427487413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7885713289151436113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

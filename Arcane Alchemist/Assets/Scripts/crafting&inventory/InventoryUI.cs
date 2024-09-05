@@ -18,6 +18,8 @@ public class InventoryUi : MonoBehaviour
     public Transform invetoryItemTransform;
     public Transform craftingItemTranform;
 
+    public GameManager GM;
+
 
     private void Start()
     {
@@ -106,6 +108,7 @@ public class InventoryUi : MonoBehaviour
         inventoryOpen = false;
         inventoryParent.SetActive(false);
         inventoryTab.SetActive(false);
+        GM.DestroyItemInfo();
     }
 
     //public void OnCraftingTabClicked()
