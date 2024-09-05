@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133b5e656791d6647bb8d89eb9d759aa, type: 3}
   m_Name: Shield-Craftingrecipe
   m_EditorClassIdentifier: 
-  name: Defulat Item
-  icon: {fileID: 0}
-  itemDescription: Used for crafting
-  result: {fileID: 0}
-  ingredients: []
+  name: shield
+  icon: {fileID: 21300000, guid: 131bf73325d9a064f8db5c98ab25c4f2, type: 3}
+  itemDescription: used for blocking incoming damage
+  result: {fileID: 11400000, guid: 1162f7069d403fc469cfb27c4bf0a852, type: 2}
+  ingredients:
+  - item: {fileID: 11400000, guid: c4f559c59a87d984e8483db96f75f796, type: 2}
+    amount: 3
+  - item: {fileID: 11400000, guid: e91c0663fc786c241a12f702339c1ec9, type: 2}
+    amount: 2

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671b0be9fd00940458edb742a77e3be7, type: 3}
   m_Name: shield
   m_EditorClassIdentifier: 
-  name: Defulat Item
+  name: shield
   icon: {fileID: 21300000, guid: 131bf73325d9a064f8db5c98ab25c4f2, type: 3}
   itemDescription: Used for deflecting incoming attacks
   itemType: 3
   statItemPrefab: {fileID: 1626687889730050069, guid: f1a69e37edef17743840974cfc82a6ce,
     type: 3}
-  amount: 0
+  amount: 1
   ID: 12

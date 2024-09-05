@@ -16,7 +16,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 6bec69d6f6c3d3544a360e6edffbe481, type: 3}
   itemDescription: Used for crafting
   itemType: 2
-  statItemPrefab: {fileID: 5409340933053809108, guid: 90785c74b47617741aa5d3792af17448,
+  statItemPrefab: {fileID: 2200605641744991900, guid: a03e9e821e8f4da4f892282255c5c11e,
     type: 3}
   amount: 1
   ID: 9
