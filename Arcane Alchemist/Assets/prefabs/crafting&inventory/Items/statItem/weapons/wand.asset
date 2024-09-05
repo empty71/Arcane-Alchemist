@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 671b0be9fd00940458edb742a77e3be7, type: 3}
   m_Name: wand
   m_EditorClassIdentifier: 
-  name: Defulat Item
+  name: wand
   icon: {fileID: 21300000, guid: a8f1c3b43fed81c43a4f8ca3f0fc7ed4, type: 3}
   itemDescription: used for spellcasting
   itemType: 3
-  statItemPrefab: {fileID: 5875270693028758024, guid: 3058356566addd04d8ab52928169b5e2,
+  statItemPrefab: {fileID: 6262986123301899059, guid: 8e26553eb7bc8f84e87ad5cbe258d7a2,
     type: 3}
   amount: 1
   ID: 11
