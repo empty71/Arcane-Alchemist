@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: New Noise
   m_EditorClassIdentifier: 
   NoiseType: 3
-  seed: 53
-  frequency: 0.138
-  offset: {x: 0, y: 0, z: 0}
-  is3D: 0
+  seed: 11
+  frequency: 0.044
+  offset: {x: 0, y: 6.52, z: 1}
+  is3D: 1
   drawMode: 1
   gradient:
     serializedVersion: 2
