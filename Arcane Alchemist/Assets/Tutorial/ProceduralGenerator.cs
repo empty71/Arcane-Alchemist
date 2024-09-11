@@ -1,7 +1,6 @@
 
 using UnityEngine;
 
-using UnityEngine;
 
 public class ProceduralGenerator : MonoBehaviour
 {
