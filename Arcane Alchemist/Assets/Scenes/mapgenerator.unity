@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 572511501}
   - component: {fileID: 572511504}
   m_Layer: 0
-  m_Name: Mesh
+  m_Name: Preview Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,12 +199,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572511500}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.0087385, y: -178.20752, z: -133.98775}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2146121657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &572511504
 MonoBehaviour:
@@ -501,12 +501,12 @@ GameObject:
   - component: {fileID: 1408923632}
   - component: {fileID: 1408923631}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: preview texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1408923631
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -587,12 +587,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408923630}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 49, y: 1, z: 49}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.0087385, y: -178.20752, z: -133.98775}
+  m_LocalScale: {x: 5.3, y: 0.1, z: 5.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2146121657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1548864497
 GameObject:
@@ -603,8 +603,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1548864500}
-  - component: {fileID: 1548864499}
-  - component: {fileID: 1548864498}
+  - component: {fileID: 1548864502}
   - component: {fileID: 1548864501}
   m_Layer: 0
   m_Name: map generator
@@ -613,40 +612,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1548864498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548864497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff717bf1dd431d8428d3fb4d53b4d845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drawMode: 2
-  meshSettings: {fileID: 11400000, guid: eaa311df3cc36654c8bb79633ee09075, type: 2}
-  heightMapSettings: {fileID: 11400000, guid: c74783447c590b849967340f21cb99fd, type: 2}
-  textureData: {fileID: 11400000, guid: 31a3657556db87a46b810111e5e5d02b, type: 2}
-  terrainMaterial: {fileID: 2100000, guid: df6b8775f5d5b914293a780ff0caf784, type: 2}
-  editorPreviewLOD: 0
-  autoUpdate: 1
---- !u!114 &1548864499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548864497}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6274b81feb0146243819344dfcd96db7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textureRender: {fileID: 1408923632}
-  meshFilter: {fileID: 572511502}
-  meshRenderer: {fileID: 572511501}
 --- !u!4 &1548864500
 Transform:
   m_ObjectHideFlags: 0
@@ -671,13 +636,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1548864497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 444ea55c11c327f4c8c2eb3c1a7fce34, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d9040b2234cd9a45bc195ad68086987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1548864502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548864497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950c5446a020e9f41980b6427dd02b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colliderLODIndex: 0
   detailLevels:
   - lod: 0
-    visibleDstThreshold: 100
+    visibleDstThreshold: 0
+  meshSettings: {fileID: 11400000, guid: eaa311df3cc36654c8bb79633ee09075, type: 2}
+  heightMapSettings: {fileID: 11400000, guid: c74783447c590b849967340f21cb99fd, type: 2}
+  textureSettings: {fileID: 11400000, guid: 31a3657556db87a46b810111e5e5d02b, type: 2}
   viewer: {fileID: 615282710}
   mapMaterial: {fileID: 2100000, guid: df6b8775f5d5b914293a780ff0caf784, type: 2}
 --- !u!1 &1916409318
@@ -866,6 +846,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2146121656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2146121657}
+  - component: {fileID: 2146121658}
+  m_Layer: 0
+  m_Name: MapPreview
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2146121657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146121656}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.0087385, y: 178.20752, z: 133.98775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1408923634}
+  - {fileID: 572511503}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2146121658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146121656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6274b81feb0146243819344dfcd96db7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textureRender: {fileID: 1408923632}
+  meshFilter: {fileID: 572511502}
+  meshRenderer: {fileID: 572511501}
+  drawMode: 2
+  meshSettings: {fileID: 11400000, guid: eaa311df3cc36654c8bb79633ee09075, type: 2}
+  heightMapSettings: {fileID: 11400000, guid: c74783447c590b849967340f21cb99fd, type: 2}
+  textureData: {fileID: 11400000, guid: 31a3657556db87a46b810111e5e5d02b, type: 2}
+  terrainMaterial: {fileID: 2100000, guid: df6b8775f5d5b914293a780ff0caf784, type: 2}
+  editorPreviewLOD: 0
+  autoUpdate: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -873,6 +909,5 @@ SceneRoots:
   - {fileID: 2072482066}
   - {fileID: 1916409320}
   - {fileID: 1548864500}
-  - {fileID: 1408923634}
-  - {fileID: 572511503}
   - {fileID: 615282710}
+  - {fileID: 2146121657}

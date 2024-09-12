@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NoiseType: 3
   seed: 11
-  frequency: 0.044
+  frequency: 0.103
   offset: {x: 0, y: 6.52, z: 1}
   is3D: 1
   drawMode: 1
@@ -56,16 +56,16 @@ MonoBehaviour:
     weightedStrength: 0
     pingPongStrength: 0
   Cellular:
-    DistanceFunction: 0
-    ReturnType: 0
-    Jitter: 0
+    DistanceFunction: 3
+    ReturnType: 2
+    Jitter: 0.4
   DomainWrap:
-    Enabled: 0
+    Enabled: 1
     type: 1
     RotationType3D: 0
     Amplitude: 0
     frequency: 0.001
     fractalType: 1
     octaves: 3
-    lacunarity: 2.7
+    lacunarity: 1.94
     gain: 0.573
