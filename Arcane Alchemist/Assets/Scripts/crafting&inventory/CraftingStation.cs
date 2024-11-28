@@ -8,7 +8,10 @@ public class CraftingStation : MonoBehaviour
     [SerializeField] public bool craftingActivated;
     public InventoryUi inventoryUi;
 
-
+    private void Start()
+    {
+        inventoryUi = FindObjectOfType<InventoryUi>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "player1")
