@@ -1779,6 +1779,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 79b40d926a790ad42a4608bd668eeebc, type: 2}
   - {fileID: 11400000, guid: 662ab4264a0c61a4da14e8996da590b3, type: 2}
   - {fileID: 11400000, guid: a395f1587cf47cf47a304c95fcd196b8, type: 2}
+  - {fileID: 11400000, guid: d859ba9c6c57c5049af32190ea8fe726, type: 2}
   canvas: {fileID: 1658095389}
   itemInfoPrefab: {fileID: 1917464125093683348, guid: b3060480546d5a3499cb7b49d4c04853,
     type: 3}
@@ -2839,7 +2840,7 @@ PrefabInstance:
     - target: {fileID: 1034600993465496613, guid: d7a8b1b0fd845ff4ca056cc5bd1c465a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.15
+      value: 6.02
       objectReference: {fileID: 0}
     - target: {fileID: 1034600993465496613, guid: d7a8b1b0fd845ff4ca056cc5bd1c465a,
         type: 3}
